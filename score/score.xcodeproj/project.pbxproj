@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1732C0BC215D8988427E6772 /* Pods_score.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B57FAA06CAAB35088B20C62 /* Pods_score.framework */; };
 		E329BC1B1D0AB4C20075D5B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329BC1A1D0AB4C20075D5B1 /* AppDelegate.swift */; };
 		E329BC1D1D0AB4C20075D5B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329BC1C1D0AB4C20075D5B1 /* ViewController.swift */; };
 		E329BC221D0AB4C20075D5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E329BC211D0AB4C20075D5B1 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23BDCA54C1F2E43C5F7D0E2A /* Pods-score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-score.debug.xcconfig"; path = "Pods/Target Support Files/Pods-score/Pods-score.debug.xcconfig"; sourceTree = "<group>"; };
+		2B57FAA06CAAB35088B20C62 /* Pods_score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BEB9283864BA7B26724682 /* Pods-score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-score.release.xcconfig"; path = "Pods/Target Support Files/Pods-score/Pods-score.release.xcconfig"; sourceTree = "<group>"; };
 		E329BC171D0AB4C20075D5B1 /* score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = score.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E329BC1A1D0AB4C20075D5B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E329BC1C1D0AB4C20075D5B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1732C0BC215D8988427E6772 /* Pods_score.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073025D052900C6C10F62725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23BDCA54C1F2E43C5F7D0E2A /* Pods-score.debug.xcconfig */,
+				51BEB9283864BA7B26724682 /* Pods-score.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44162BCCB684886B52AE6B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B57FAA06CAAB35088B20C62 /* Pods_score.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E329BC0E1D0AB4C20075D5B1 = {
 			isa = PBXGroup;
 			children = (
 				E329BC191D0AB4C20075D5B1 /* score */,
 				E329BC181D0AB4C20075D5B1 /* Products */,
+				073025D052900C6C10F62725 /* Pods */,
+				44162BCCB684886B52AE6B76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E329BC291D0AB4C20075D5B1 /* Build configuration list for PBXNativeTarget "score" */;
 			buildPhases = (
+				38E4093A18C9FE04647C2A48 /* [CP] Check Pods Manifest.lock */,
 				E329BC131D0AB4C20075D5B1 /* Sources */,
 				E329BC141D0AB4C20075D5B1 /* Frameworks */,
 				E329BC151D0AB4C20075D5B1 /* Resources */,
+				5516EAE7CE5E99C23430059D /* [CP] Embed Pods Frameworks */,
+				1E9D8366609B10D5572992A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E9D8366609B10D5572992A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-score/Pods-score-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E4093A18C9FE04647C2A48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5516EAE7CE5E99C23430059D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-score/Pods-score-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E329BC131D0AB4C20075D5B1 /* Sources */ = {
@@ -237,6 +312,7 @@
 		};
 		E329BC2A1D0AB4C20075D5B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BDCA54C1F2E43C5F7D0E2A /* Pods-score.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = score/Info.plist;
@@ -248,6 +324,7 @@
 		};
 		E329BC2B1D0AB4C20075D5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BEB9283864BA7B26724682 /* Pods-score.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = score/Info.plist;
@@ -276,6 +353,7 @@
 				E329BC2B1D0AB4C20075D5B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
