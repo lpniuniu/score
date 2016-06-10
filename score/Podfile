@@ -9,4 +9,5 @@ target 'score' do
     pod 'Alamofire', '~> 3.0'
     pod 'SnapKit', '~> 0.0'
     pod 'YapDatabaseExtensions'
+    pod 'Cosmos', '~> 1.2'
 end

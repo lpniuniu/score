@@ -8,6 +8,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
+  - Cosmos (1.2.3)
   - Reachability (3.2)
   - SnapKit (0.21.0)
   - ValueCoding (1.3.0)
@@ -79,18 +80,20 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - Cosmos (~> 1.2)
   - SnapKit (~> 0.0)
   - YapDatabaseExtensions
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
   ValueCoding: 9c9ed6ecdb9cc37f1a8d3fd9f5756953caf5a869
   YapDatabase: 713d4018cfacbd6e77dd430710ca84730e450980
   YapDatabaseExtensions: d050d588bd13f98cd309632c80db77771bf0dc78
 
-PODFILE CHECKSUM: ebaae9535b57031f90bdf69aacbe3bccf564e649
+PODFILE CHECKSUM: 1acd3ba1849ced993dfc9864361360940306cba5
 
 COCOAPODS: 1.0.1

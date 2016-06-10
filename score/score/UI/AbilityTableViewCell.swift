@@ -8,12 +8,13 @@
 
 import UIKit
 import SnapKit
+import Cosmos
 
 class AbilityTableViewCell: UITableViewCell {
     
     let abilityDeclareLabel:UILabel = UILabel()
-    // let starButton:UIButton = UIButton(type: .Custom)
-    
+    let starView:CosmosView = CosmosView()
+        
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .None
@@ -28,14 +29,14 @@ class AbilityTableViewCell: UITableViewCell {
             make.top.equalTo(self)
         }
         
-//        addSubview(starButton)
-//        starButton.backgroundColor = UIColor.yellowColor()
-//        starButton.snp_makeConstraints { (make) in
-//            make.top.equalTo(abilityDeclareLabel.snp_bottom)
-//            make.left.equalTo(abilityDeclareLabel)
-//            make.width.equalTo(25)
-//            make.height.equalTo(25)
-//        }
+        addSubview(starView)
+        starView.backgroundColor = UIColor.whiteColor()
+        starView.snp_makeConstraints { (make) in
+            make.top.equalTo(abilityDeclareLabel.snp_bottom)
+            make.left.equalTo(abilityDeclareLabel)
+            make.right.equalTo(self)
+            make.height.equalTo(25)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
